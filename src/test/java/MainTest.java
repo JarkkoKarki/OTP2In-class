@@ -12,28 +12,28 @@ public class MainTest {
     public void testFinnishBundle() {
         Locale myLocale = new Locale("fi", "FI");
         ResourceBundle rb = ResourceBundle.getBundle("MessagesBundle", myLocale);
-        assertEquals("Montako tuotetta?", rb.getString("first"));
+        assertEquals("Syötä ostettavien tuotteiden määrä: ", rb.getString("first"));
     }
 
     @Test
     public void testEnglishBundle() {
         Locale myLocale = new Locale("en", "US");
         ResourceBundle rb = ResourceBundle.getBundle("MessagesBundle", myLocale);
-        assertEquals("Total price: ", rb.getString("total"));
+        assertEquals("Total cost: ", rb.getString("total"));
     }
 
     @Test
     public void testJapaneseBundle() {
         Locale myLocale = new Locale("ja", "JP");
         ResourceBundle rb = ResourceBundle.getBundle("MessagesBundle", myLocale);
-        assertEquals("総費用 ", rb.getString("total"));
+        assertEquals("「合計金額:」", rb.getString("total"));
     }
 
     @Test
     public void testSwedishBundle() {
         Locale myLocale = new Locale("sv", "SE");
         ResourceBundle rb = ResourceBundle.getBundle("MessagesBundle", myLocale);
-        assertEquals("Totalkostnad ", rb.getString("total"));
+        assertEquals("Total kostnad: ", rb.getString("total"));
     }
 
     @Test
